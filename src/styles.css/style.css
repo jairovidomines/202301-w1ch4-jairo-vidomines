@@ -1,0 +1,13 @@
+@import url("/node_modules/@fontsource/nunito/400.css");
+@import url("/node_modules/@fontsource/nunito/800.css");
+
+:root {
+  --color-indetity: #ee6436;
+
+  --tipography-main: "Nunito", sans-serif;
+
+  --block-padding-horizontal: 130px;
+  --block-padding-vertical: 70px;
+
+  --button-radius: 0 25px 25px 25px;
+}

@@ -42,6 +42,7 @@ button {
 
 h1 {
   text-transform: uppercase;
+  text-align: center;
   color: var(--color-indetity);
   font-weight: 800;
   font-size: 0.75rem;
@@ -76,4 +77,56 @@ img {
   flex-direction: column;
   gap: 10px;
   padding-bottom: 20px;
+}
+article {
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 0;
+  bottom: 0.3rem;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 17, 17, 0.3);
+  color: #fff;
+  opacity: 0;
+}
+
+article:hover .text {
+  opacity: 1;
+}
+
+@media (min-width: 700px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1 {
+    text-align: left;
+  }
+  .title-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  button {
+    margin: 0px;
+  }
+
+  /* h2 {
+    text-align: left;
+  }
+
+  button {
+    text-align: right;
+  } */
 }
